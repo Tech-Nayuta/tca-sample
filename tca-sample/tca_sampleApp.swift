@@ -6,12 +6,24 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct tca_sampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                store: Store(
+                    initialState: AppState(),
+                    reducer: appReducer,
+                    environment: AppEnvironment(
+                        mainQueue: DispatchQueue.main.eraseToAnyScheduler(),
+                        numberFact: { num in
+                            Effect(value: "\(num) is a good nuumber Brent")
+                        }
+                    )
+                )
+            )
         }
     }
 }

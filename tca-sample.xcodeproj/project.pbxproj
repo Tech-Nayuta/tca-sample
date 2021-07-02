@@ -13,6 +13,8 @@
 		D75DC33C268873D4003B942B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75DC33B268873D4003B942B /* Preview Assets.xcassets */; };
 		D75DC34526887517003B942B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D75DC34426887517003B942B /* ComposableArchitecture */; };
 		D75DC34726887576003B942B /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75DC34626887576003B942B /* AppFeature.swift */; };
+		D75DC3492688846C003B942B /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75DC3482688846C003B942B /* CounterView.swift */; };
+		D75DC34B2688849A003B942B /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75DC34A2688849A003B942B /* CounterFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		D75DC33B268873D4003B942B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D75DC33D268873D4003B942B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D75DC34626887576003B942B /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		D75DC3482688846C003B942B /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		D75DC34A2688849A003B942B /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				D75DC334268873CB003B942B /* tca_sampleApp.swift */,
 				D75DC336268873CB003B942B /* ContentView.swift */,
+				D75DC34A2688849A003B942B /* CounterFeature.swift */,
+				D75DC3482688846C003B942B /* CounterView.swift */,
 				D75DC34626887576003B942B /* AppFeature.swift */,
 				D75DC338268873D4003B942B /* Assets.xcassets */,
 				D75DC33D268873D4003B942B /* Info.plist */,
@@ -152,6 +158,8 @@
 				D75DC34726887576003B942B /* AppFeature.swift in Sources */,
 				D75DC337268873CB003B942B /* ContentView.swift in Sources */,
 				D75DC335268873CB003B942B /* tca_sampleApp.swift in Sources */,
+				D75DC34B2688849A003B942B /* CounterFeature.swift in Sources */,
+				D75DC3492688846C003B942B /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

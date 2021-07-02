@@ -14,13 +14,8 @@ struct ContentView: View {
     var body: some View {
         WithViewStore(store) { viewStore in
             VStack {
-                HStack {
-                    Button("-") { viewStore.send(.decrementButtonTapped)
-                    }
-                    Text("\(viewStore.count)")
-                    Button("+") { viewStore.send(.incrementButtonTapped)
-                    }
-                }
+                CounterView(store: self.store.scope(state: \.counter1, action: AppAction.counter1))
+                CounterView(store: self.store.scope(state: \.counter2, action: AppAction.counter2))
                 Button("Number fact") { viewStore.send(.numberFactButtonTapped)}
             }
             .alert(
